@@ -1,6 +1,7 @@
 package Departmental_test;
 
 import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -52,7 +53,7 @@ public class practice1 extends JFrame {
         add(delbtn).setBounds(30,320,100,30);
 
         table.addMouseListener(new MouseAdapter(){
-            public void mouseClicked(){
+            public void mouseClicked(MouseEvent e){
                 int row = table.getSelectedRow();
                 if(row!=-1){
                     nametxt.setText(dtm.getValueAt(row, 0).toString());
