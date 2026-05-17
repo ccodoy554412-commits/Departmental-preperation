@@ -1,9 +1,9 @@
 package Departmental_test;
 
-import java.awt.event.*;
+import java.awt.event.MouseEvent;
 import java.io.*;
 import javax.swing.*;
-import javax.swing.event.*;
+import javax.swing.event.MouseInputAdapter;
 import javax.swing.table.*;
 
 public class goal extends JFrame {
@@ -91,9 +91,8 @@ public class goal extends JFrame {
                 deptxt.getText(), 
                 yltxt.getText(), 
                 walletxt.getText(), statustxt.getText()});
-                clear();
-                file();
             }
+			clear();
 		});
 		  updt.addActionListener(e -> {
 	            int i = table.getSelectedRow();
@@ -145,3 +144,4 @@ public class goal extends JFrame {
 	}
 
 }
+
